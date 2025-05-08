@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html class="theme-dark" lang="gl">
+<html class="theme-light" lang="gl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AmesWeather - O tempo en Ames</title>
+    <title>O Tempo en Galiza</title>
     <link rel="stylesheet" href="./style/bulma.min.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
@@ -75,7 +75,7 @@
       >
         <div class="navbar-brand">
           <a class="navbar-item has-text-weight-bold" href="index.html">
-            AmesWeather
+            O Tempo en Galiza
           </a>
 
           <a
@@ -94,13 +94,20 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item" onclick="actualizarDatos(42.84,-8.57)">
+            
+          <a class="navbar-item" href="#" onclick="actualizarDatos(42.8660422,-8.541)"> Casa </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.28,-8.87)"> Campara </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.7369066,-7.8737579)"> Cariño </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.06,-5.38)"> San Isidro </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(42.85,-8.58)"> Polígono Industrial "Novo Milladoiro" </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(65.5866397,22.0999817)"> Bergnäset (Suecia) </a>
+          <a id="demo"class="navbar-item" href="#" onload="actualizarDatos(position.coords.latitude, position.coords.longitude)">  </a><!-- <a class="navbar-item" onclick="actualizarDatos(42.84,-8.57)">
               O Milladoiro
             </a>
 
             <a class="navbar-item" onclick="actualizarDatos(42.85, -8.65)">
               Bertamiráns
-            </a>
+            </a> -->
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
@@ -166,46 +173,56 @@
         </div>
         <div class="columns is-multiline mx-4">
           <div class="column">
-            <div
-              class="box is-flex is-justify-content-space-between is-align-items-center"
-            >
+            <div class="box is-flex is-justify-content-space-between is-align-items-center" >
               <strong class="title is-5">Sensación térmica:</strong>
               <p id="feellike" class="subtitle is-4">23ºC</p>
             </div>
-            <div
-              class="box is-flex is-justify-content-space-between is-align-items-center"
-            >
+
+            <div class="box is-flex is-justify-content-space-between is-align-items-center">
               <strong class="title is-5">Humidade:</strong>
               <p id="humidity" class="subtitle is-4">60%</p>
             </div>
-            <div
-              class="box is-flex is-justify-content-space-between is-align-items-center"
-            >
+            <div class="box is-flex is-justify-content-space-between is-align-items-center">
               <strong class="title is-5">Presión:</strong>
               <p id="pressure" class="subtitle is-4"></p>
             </div>
           </div>
+
           <div class="column">
-            <div
-              class="box is-flex is-justify-content-space-between is-align-items-center"
-            >
+            <div class="box is-flex is-justify-content-space-between is-align-items-center" >
               <strong class="title is-5">Temp. máxima:</strong>
               <p id="tempMax" class="subtitle is-4">14ºC</p>
             </div>
-            <div
-              class="box is-flex is-justify-content-space-between is-align-items-center"
-            >
-              <strong class="title is-5">Temp. minima:</strong>
+            <div class="box is-flex is-justify-content-space-between is-align-items-center" >
+              <strong class="title is-5">Temp. mínima:</strong>
               <p id="tempMin" class="subtitle is-4">23ºC</p>
             </div>
-            <div
-              class="box is-flex is-justify-content-space-between is-align-items-center"
-            >
+            <div class="box is-flex is-justify-content-space-between is-align-items-center" >
               <strong class="title is-5">Vento:</strong>
               <p id="wind" class="subtitle is-4"></p>
             </div>
+            
+          </div>
+
+          <!-- <div class="column">
+            <div class="box is-flex is-justify-content-space-between is-align-items-center" >
+              <strong class="title is-5">Temp. máxima:</strong>
+              <p id="tempMax" class="subtitle is-4">14ºC</p>
+            </div>
+            <div class="box is-flex is-justify-content-space-between is-align-items-center" >
+              <strong class="title is-5">Temp. mínima:</strong>
+              <p id="tempMin" class="subtitle is-4">23ºC</p>
+            </div>
+            <div class="box is-flex is-justify-content-space-between is-align-items-center" >
+              <strong class="title is-5">Vento:</strong>
+              <p id="wind" class="subtitle is-4"></p>
+            </div> -->
+            
           </div>
         </div>
+
+
+        
 
         <div class="is-flex is-justify-content-center is-align-items-center">
           <h1 class="title is-5 py-4">ENTRADA E SAÍDA DO SOL</h1>
@@ -232,7 +249,7 @@
     </main>
     <footer class="footer mt-4">
       <p class="footer__p has-text-centered">
-        AmesWeather - 2025 - Tódolos dereitos reservados
+        O Tempo en Galiza - 2025 - Tódolos dereitos reservados
       </p>
     </footer>
     <script src="./js/script.js"></script>
