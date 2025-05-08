@@ -6,7 +6,8 @@ const CACHE_NAME = 'v1_cache_weatherapp_pwa';
 
 var urlsToCache = [
     './',
-    './css/styles.css',
+    './style/bulma.min.css',
+    './style/styles.css',
     './assets/favicons/favicon_16x16@1x.png',
     './assets/favicons/favicon_32x32@1x.png',
     './assets/favicons/favicon_48x48@1x.png',
